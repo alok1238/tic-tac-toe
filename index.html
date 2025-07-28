@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advanced Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Tic-Tac-Toe</h1>
+    <div class="controls">
+      <select id="gameMode">
+        <option value="pvp">Player vs Player</option>
+        <option value="ai">Player vs AI</option>
+      </select>
+      <button id="restart">Restart</button>
+      <button id="toggleSound">Sound: ON</button>
+    </div>
+    <div class="scoreboard">
+      Player X: <span id="scoreX">0</span> |
+      Player O: <span id="scoreO">0</span> |
+      Ties: <span id="scoreTie">0</span>
+    </div>
+    <div class="board" id="board"></div>
+    <p id="status">Current Turn: X</p>
+    <div class="history">
+      <h3>Game History</h3>
+      <ul id="historyList"></ul>
+    </div>
+    <audio id="clickSound" src="click.mp3" preload="auto"></audio>
+    <audio id="winSound" src="win.mp3" preload="auto"></audio>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
